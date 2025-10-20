@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bay Village ECPTA Santa Shop — December 6, 2025</title>
+  <meta name="description" content="Bay Village Early Childhood PTA Santa Shop at Bay Presbyterian Church on Saturday, December 6, 2025, 10 AM–1 PM. Family-friendly gifts $6 or under. Cash or digital payments accepted." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --red:#c7352d;
+      --dark-red:#a42822;
+      --green:#1a7d4d;
+      --gold:#f5de6e;
+      --cream:#fff6e6;
+      --ink:#2b2b2b;
+      --snow:#f9fbff;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: "Nunito", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color:var(--ink);
+      background: radial-gradient(1200px 600px at 10% -10%, #ffffffaa, #ffffff00) no-repeat,
+                  linear-gradient(180deg, #fff, var(--snow));
+    }
+    header.hero{
+      background: var(--red);
+      color:white;
+      padding: clamp(16px, 4vw, 28px) 16px 12px;
+      position: relative;
+      overflow:hidden;
+      text-align:center;
+    }
+    .snowflakes{
+      position:absolute; inset:0; pointer-events:none; opacity:.18;
+      background-image: radial-gradient(circle at 20% 30%, #fff 0 2px, transparent 3px),
+                        radial-gradient(circle at 80% 20%, #fff 0 2px, transparent 3px),
+                        radial-gradient(circle at 60% 80%, #fff 0 2px, transparent 3px),
+                        radial-gradient(circle at 10% 80%, #fff 0 2px, transparent 3px),
+                        radial-gradient(circle at 90% 60%, #fff 0 2px, transparent 3px);
+      background-size: 120px 120px, 160px 160px, 140px 140px, 180px 180px, 200px 200px;
+      background-repeat: repeat;
+      filter: blur(.3px);
+    }
+    .hero h1{
+      margin: 8px 0 4px;
+      font-family: "Luckiest Guy", cursive;
+      letter-spacing:.5px;
+      font-size: clamp(28px, 5vw, 56px);
+      line-height:1.1;
+      text-shadow: 0 3px 0 var(--dark-red), 0 6px 12px rgba(0,0,0,.25);
+    }
+    .subhead{
+      font-weight:900;
+      font-size: clamp(16px, 2.4vw, 24px);
+      letter-spacing:.2px;
+      margin: 0 0 12px;
+      color: var(--gold);
+      text-shadow: 0 2px 0 rgba(0,0,0,.2);
+    }
+    .hero img{
+      width:min(100%, 980px);
+      height:auto;
+      border-radius: 14px;
+      box-shadow: 0 10px 28px rgba(0,0,0,.35);
+      border: 6px solid var(--cream);
+      margin: 10px auto 8px;
+      display:block;
+      background:#fff;
+    }
+    main{
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 18px clamp(14px, 3vw, 28px) 48px;
+    }
+    .info-grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:16px;
+    }
+    @media (min-width: 740px){
+      .info-grid{ grid-template-columns: 1.2fr .8fr; }
+    }
+    .card{
+      background: white;
+      border-radius: 16px;
+      padding: clamp(14px, 2.6vw, 22px);
+      box-shadow: 0 10px 20px rgba(0,0,0,.08);
+      border: 2px solid #f1f1f1;
+    }
+    .card h2{
+      margin:0 0 10px;
+      font-size: clamp(20px, 3.2vw, 28px);
+      color: var(--green);
+    }
+    .pill{
+      display:inline-block;
+      padding:8px 12px;
+      border-radius:999px;
+      font-weight:800;
+      color:#fff;
+      background: var(--green);
+      margin: 6px 6px 6px 0;
+    }
+    .details{
+      list-style:none; padding:0; margin:10px 0 0;
+    }
+    .details li{
+      margin: 8px 0;
+      padding-left: 28px;
+      position:relative;
+    }
+    .details li::before{
+      content:"🎁";
+      position:absolute; left:0; top:-2px;
+    }
+    .contact{
+      text-align:center;
+      margin-top: 18px;
+      font-weight:700;
+    }
+    .contact a{ color: var(--red); text-decoration: none; }
+    .badge-row{ display:flex; flex-wrap:wrap; gap:8px; margin-top:8px;}
+    .badge{
+      background: var(--cream);
+      border: 2px dashed var(--gold);
+      border-radius: 12px;
+      padding: 8px 12px;
+      font-weight:900;
+      color: var(--dark-red);
+    }
+    footer{
+      text-align:center;
+      padding: 20px;
+      color:#6b6b6b;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero" role="banner">
+    <div class="snowflakes" aria-hidden="true"></div>
+    <h1>Bay Village ECPTA Santa Shop</h1>
+    <p class="subhead">Saturday, December 6, 2025 · 10 AM – 1 PM</p>
+    <img src="images/santa-shop-yard-sign.png" alt="Bay Village Early Childhood PTA Santa Shop yard sign with Santa, reindeer and elf" />
+  </header>
+
+  <main id="content">
+    <div class="info-grid">
+      <section class="card" aria-labelledby="about">
+        <h2 id="about">About the Santa Shop</h2>
+        <p>Welcome to a festive, kid-friendly shopping experience where little elves can pick out thoughtful presents for the special people in their lives. Gifts are geared toward <strong>family and loved ones</strong>, making it easy for children to find something just right.</p>
+        <div class="badge-row" aria-hidden="true">
+          <div class="badge">All gifts $6 or under</div>
+          <div class="badge">Cash or digital payments accepted</div>
+          <div class="badge">Kid-approved &amp; fun!</div>
+        </div>
+        <ul class="details">
+          <li><strong>Date &amp; Time:</strong> Saturday, December 6, 2025 · 10 AM – 1 PM</li>
+          <li><strong>Location:</strong> Bay Presbyterian Church, 25415 Lake Rd, Bay Village, OH</li>
+          <li><strong>Hosted by:</strong> Bay Village Early Childhood PTA</li>
+        </ul>
+        <p class="contact">Questions? Email <a href="mailto:bvecptasantashop@gmail.com">bvecptasantashop@gmail.com</a></p>
+      </section>
+
+      <aside class="card" aria-labelledby="tips">
+        <h2 id="tips">Helpful Tips</h2>
+        <ul class="details">
+          <li>Bring a simple list of who your child will shop for.</li>
+          <li>Volunteers are on hand to help with choosing and wrapping.</li>
+          <li>Plenty of affordable choices — <strong>$6 or under</strong> — for everyone.</li>
+          <li>We accept cash or digital payment at checkout.</li>
+        </ul>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Bay Village Early Childhood PTA · Santa Shop
+  </footer>
+
+  <!-- Structured data for better sharing and search -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Bay Village ECPTA Santa Shop",
+    "startDate": "2025-12-06T10:00:00-05:00",
+    "endDate": "2025-12-06T13:00:00-05:00",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "image": ["images/santa-shop-yard-sign.png"],
+    "description": "Family-friendly Santa Shop with gifts for loved ones, all $6 or under. Cash or digital payment accepted.",
+    "location": {
+      "@type": "Place",
+      "name": "Bay Presbyterian Church",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "25415 Lake Rd",
+        "addressLocality": "Bay Village",
+        "addressRegion": "OH",
+        "postalCode": "",
+        "addressCountry": "US"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Bay Village Early Childhood PTA",
+      "email": "bvecptasantashop@gmail.com"
+    }
+  }
+  </script>
+</body>
+</html>
